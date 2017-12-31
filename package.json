@@ -4,13 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ignore-sync": "ignore-sync"
+    "lint-staged": "lint-staged",
+    "precommit": "lint-staged",
+    "storybook": "poi --storybook",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nick Chan",
   "license": "ISC",
   "devDependencies": {
-    "ignore-sync": "^1.0.0"
+    "@storybook/react": "^3.3.3",
+    "husky": "^0.14.3",
+    "ignore-sync": "^1.0.0",
+    "lint-staged": "^6.0.0",
+    "poi": "^9.6.9",
+    "poi-preset-react": "^9.2.1",
+    "poi-preset-storybook": "^0.1.3",
+    "prettier-standard": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ],
+    "*ignore-sync": [
+      "ignore-sync",
+      "git add *ignore"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
