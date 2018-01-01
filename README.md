@@ -4,7 +4,7 @@ Playing around with
 
 * [popmotion](https://popmotion.io/) - animation library
 * [storybook](https://github.com/storybooks/storybook/tree/master/app/react) - UI documentation
-* [poi](https://poi.js.org/#/) - get out og the hell of webpack configs
+* [poi](https://poi.js.org/#/) - get out from the hell of webpack configs
 
 
 ## poi
